@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+/*-----------------------------------------------------------------------------------*/
+body{
+    background-color: #dddddd;
+}
+/* cabeçalho-------------------------------------------------------------------------*/
+header#cabecalho{
+    position: fixed;    
+    width: 99.1%;
+    display: block;
+    background: #302222;
+    border: 6px solid black;
+    margin: -8px auto 0px -8px;
+    box-shadow: 0px 0px 30px black;
+}
+header#cabecalho ul{  
+    list-style: none;
+    margin: -10px auto 15px 280px;
+}
+header#cabecalho img{
+    position: absolute;
+    margin: -30px 0px 0px -35px;
+}
+header#cabecalho li{
+    display: inline-block;
+    padding: 5px;  
+    margin: 5px;   
+    transition: background-color 1s;
+}
+header#cabecalho a:hover{
+    color: rgb(44, 127, 236);     
+}
+header#cabecalho a{
+    text-decoration: none;
+    font-size: 12pt;
+    color: white;
+    cursor: pointer;
+}
+/* inserção de dados-----------------------------------------------------------------------------------*/
+section#dadosIniciais{
+    width: 370px;
+    display: block;
+    float: left;
+    background-color: #f3e5cb;
+    margin: 0px auto 0px 0px;
+    box-shadow: 0px 0px 50px black;
+    height: 510px;
+    padding: 110px 10px 10px 10px;
+}
+section#dadosIniciais h1{
+    font-family: 'Bangers', cursive;
+    color: rgb(20, 4, 245);
+    text-shadow: 0px 0px 50px black;    
+}
+/*campo de dados inseridos------------------------------------------------------------------------------*/
+td{
+    text-align: center;
+    padding: 0px 3px 0px 3px;
+    background-color: #f3e5cb;
+}
+#tabelaFrequencia{
+    display: block;
+    overflow:scroll;
+    width: 200px;
+    height: 450px;
+    background-color: #f3e5cb;
+    box-shadow: 0px 0px 30px black; 
+}
+/* textos de informação e scroll efeitos-----------------------------------------------------------------*/
+#tabelaFrequencia::-webkit-scrollbar { width:10px; background:#f3e5cb; } /* configurando scroll */
+#tabelaFrequencia::-webkit-scrollbar-track { background: #f3e5cb; }
+#tabelaFrequencia::-webkit-scrollbar-thumb { border-radius:3px; background: black; border: 1px solid #f3e5cb;}
+#tabelaFrequencia::-webkit-scrollbar-corner{ background: #f3e5cb;}
+
+#mostrar{
+    display: none;
+}
+.passarMouse{
+    display: none;
+    display: block;
+    font-weight: bold;
+}
+.passarMouse:hover #mostrar{
+    display:block;
+    position: absolute;
+    color: #f3e5cb;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(10, 34, 34);   
+}
+/*------------------------------------------------------------------------------------------*/
+section#corpoTabelaFrequencia{
+    display: block;
+    float: left;
+    width: 220px;
+    background-color: #f3e5cb;
+    padding: 50px 10px 40px 30px;
+    margin: 90px 0px 0px -18px;
+    box-shadow: 0px 0px 50px black;
+}
+/*footer------------------------------------------------------------------------------------*/
+footer{
+    clear: both;
+    float: bottom;
+    width: 100.3%;
+    display: block;
+    background: #302222;
+    border: 6px solid black;
+    margin: 0px auto 0px -8px;
+    box-shadow: 0px 0px 30px black;
+}
+footer p{
+    font-size: 13pt;
+    color: white;
+    text-align: center;
+}
+/*-----------------------------------------------------------------------------------------*/
+div#corpoConceitos{
+    
+    display: block;
+    width: 400px;
+    background-color: rgb(91, 161, 34);
+    padding: 130px 0px 0px 10px;
+}
