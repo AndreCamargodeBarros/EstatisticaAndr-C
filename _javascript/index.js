@@ -43,12 +43,12 @@ function bod(){
                     '<div>'+
                         '<h1><strong>Distribuição de Frequência</STRONG></h1>'+
                         '<h2><strong> Coleta de Dados </STRONG></h2>'+
-                        '<h4> Nome :<input type="text" placeholder="Nome da Variável" id="nome"></h4>'+
-                        '<h4> Dados:<input type="number" placeholder="Números" id="dados"></br>'+
-                            '<button type="button" onclick="adicionar()"> Adicionar </button>'+
-                            '<button type="button" onclick="desfazer()"> Desfazer </button>'+
-                            '<button type="button" onclick="limpar()"> Reiniciar </button>'+
-                            '<button type="button" onclick="retirar()"> Retirar elemento </button>'+
+                        '<h4> Nome :<input class="campo" type="text" placeholder="Nome da Variável" id="nome"></h4>'+
+                        '<h4> Dados:<input class="campo" type="number" placeholder="Números" id="dados"></br>'+
+                            '<button type="button" class="botao" onclick="adicionar()"> Adicionar </button>'+
+                            '<button type="button" class="botao" onclick="desfazer()"> Desfazer </button></br>'+
+                            '<button type="button" class="botao" onclick="limpar()"> Reiniciar </button>'+
+                            '<button type="button" class="botao" onclick="retirar()"> Retirar elemento </button>'+
                         '</h4>'+
                     '</div> '+                              
                     '</br>'+
@@ -57,7 +57,19 @@ function bod(){
                         '<tr><td id="total"></td></tr>'+
                     '</table>'+    
                 '</section>'+
-            '</div>';
+            '</div>'+
+//footer////////////////////////////////////////////////////////////////////////////////////////////////
+            '<footer>'+
+                '<p>'+
+                    'Copyright &copy; 2019 - André Camargo de Barros</br>'+
+                    'Facebook  |  Linkedin  | acamargobarros@gmail.com</acamargobarros@gmail>'+
+                '</p>'+
+            '</footer>'+
+//conseitos/////////////////////////////////////////////////////////////////////////////////////////////
+            '<div id="corpoConceitos">'+
+                '<h1>Conceitos</h1>'+
+                '<p>aa</p>'+
+            '</div>';          
 document.getElementById("interface").innerHTML = _interface
 }
 // mudança dos menus//////////////////////////////////////////////////////////////////////////////
