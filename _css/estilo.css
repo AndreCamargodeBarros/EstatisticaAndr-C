@@ -39,7 +39,7 @@ header#cabecalho a{
 }
 /* inserção de dados-----------------------------------------------------------------------------------*/
 section#dadosIniciais{
-    width: 370px;
+    width: 280px;
     display: block;
     float: left;
     background-color: #f3e5cb;
@@ -53,6 +53,31 @@ section#dadosIniciais h1{
     color: rgb(20, 4, 245);
     text-shadow: 0px 0px 50px black;    
 }
+.campo{
+    width: 200px;
+    margin: 0px 0px 0px 15px;
+    background-color: #f3e5cb;
+    box-shadow: 0px 0px 10px black;
+    padding: 5px;
+    
+}
+.botao{
+    display: inline-block;
+    width: 130px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+    padding: 8px;
+    font-size: 11pt;
+    background-color: #f3e5cb;
+}
+.botao:hover{
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(20, 4, 245); 
+    box-shadow: 0px 0px 10px black;  
+}
+
 /*campo de dados inseridos------------------------------------------------------------------------------*/
 td{
     text-align: center;
