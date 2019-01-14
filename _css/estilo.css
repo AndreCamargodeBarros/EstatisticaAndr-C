@@ -28,10 +28,16 @@ header#cabecalho li{
     margin: 5px;   
     transition: background-color 1s;
 }
-header#cabecalho a:hover{
+.menu:hover{
     color: rgb(44, 127, 236);     
 }
-header#cabecalho a{
+.teste{
+    text-decoration: none;
+    font-size: 12pt;
+    color: rgb(44, 127, 236);
+    cursor: pointer;
+}
+.menu{
     text-decoration: none;
     font-size: 12pt;
     color: white;
@@ -49,34 +55,67 @@ section#dadosIniciais{
     padding: 110px 10px 10px 10px;
 }
 section#dadosIniciais h1{
-    font-family: 'Bangers', cursive;
+    /*font-family: 'Bangers', cursive;       */
     color: rgb(20, 4, 245);
     text-shadow: 0px 0px 50px black;    
 }
 .campo{
-    width: 200px;
+    width: 180px;
     margin: 0px 0px 0px 15px;
     background-color: #f3e5cb;
     box-shadow: 0px 0px 10px black;
     padding: 5px;
-    
+}   
+.botoes{
+    display: block;
+    margin-left: 55px;
 }
 .botao{
     display: inline-block;
-    width: 130px;
-    margin-top: 10px;
+    cursor: pointer;
     margin-right: 10px;
+    width: 100px;
+    color: white;
+    margin-top: 15px;
     border: none;
+    border-radius: 20px;
     padding: 8px;
     font-size: 11pt;
-    background-color: #f3e5cb;
+    background-color: rgba(5, 104, 5, 0.952);
 }
 .botao:hover{
     color: white;
     border-radius: 5px;
-    background-color: rgb(20, 4, 245); 
+    background-color: rgb(5, 224, 23); 
     box-shadow: 0px 0px 10px black;  
 }
+.botoestb{
+    display: block;
+    margin-left: 55px;
+}
+.botaotb{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 100px;
+    color: white;
+    margin-top: -5px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 11pt;
+    background-color: rgba(5, 104, 5, 0.952);
+}
+.botaotb:hover{
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(5, 224, 23); 
+    box-shadow: 0px 0px 10px black;  
+}
+.h2tb{
+    margin-left: 0px;
+}
+
 
 /*campo de dados inseridos------------------------------------------------------------------------------*/
 td{
@@ -87,7 +126,7 @@ td{
 #tabelaFrequencia{
     display: block;
     overflow:scroll;
-    width: 200px;
+    width: 210px;
     height: 450px;
     background-color: #f3e5cb;
     box-shadow: 0px 0px 30px black; 
@@ -124,6 +163,69 @@ section#corpoTabelaFrequencia{
     margin: 90px 0px 0px -18px;
     box-shadow: 0px 0px 50px black;
 }
+.corpoTabelaDiscreta{
+    display: block;
+    float: right;
+    width: 697px;
+    background-color: #f3e5cb;
+    padding: 10px 10px 40px 30px;
+    margin: 90px -8px 0px 0px;
+    box-shadow: 0px 0px 50px black;
+    height: 490px;
+}
+/*corpo tabela discreta----------------------------------------------------------------------*/
+.tabelaDiscreta{
+    width: 680px;
+    display: block;
+    float: right;
+    margin: 0px 15px 0px 0px;
+    background-color: #f3e5cb;
+    overflow:scroll;
+    height: 200px;
+    box-shadow: 0px 0px 30px black; 
+   
+}
+.tbF{
+    font-weight: bold;
+    width: 120px;
+    padding: 0px;
+}
+/* textos de informação e scroll efeitos-----------------------------------------------------------------*/
+.tabelaDiscreta::-webkit-scrollbar { width:10px; background:#f3e5cb; } /* configurando scroll */
+.tabelaDiscreta::-webkit-scrollbar-track { background: #f3e5cb; }
+.tabelaDiscreta::-webkit-scrollbar-thumb { border-radius:3px; background: black; border: 1px solid #f3e5cb;}
+.tabelaDiscreta::-webkit-scrollbar-corner{ background: #f3e5cb;}
+
+.tbmedias{
+    display: inline-block;
+    margin:  20px auto auto auto;
+    font-size: 14pt;
+    
+}
+.tbLmedias{
+    margin-left: 80px;
+}
+.tbdesvio{
+    width: 680px;
+    display: block;
+    float: right;
+    margin: 15px 15px 0px 0px;
+    background-color: #f3e5cb;
+    height: 100px;
+    box-shadow: 0px 0px 30px black; 
+   
+}
+.tbV{
+    font-weight: bold;
+    width: 133px;
+    padding: 5px 5px 0px 5px;
+}
+.tbVc{
+    font-weight: bold;
+    width: 190px;
+    padding: 5px 5px 0px 5px;
+}
+
 /*footer------------------------------------------------------------------------------------*/
 footer{
     clear: both;
